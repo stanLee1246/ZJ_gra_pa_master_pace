@@ -1,0 +1,11 @@
+﻿采集日期,仓库,项目类型,项目链接,核查证据,内容,运行复现
+2026-10-22,JWangL5/BigDataGP,作者自述本专业本科毕设,https://github.com/JWangL5/BigDataGP,README；code/project/app/graph.py；code/project/app/views.py,论文引文网络、Neo4j、PageRank,未运行；未复现作者指标
+2026-10-22,crabnoctis/BreastCancerDetection-CNN-BreakHis,作者自述本专业本科毕设,https://github.com/crabnoctis/BreastCancerDetection-CNN-BreakHis,README；ModelTraining 文件树,BreakHis、CNN分类、训练与展示,未运行；未复现作者指标
+2026-10-22,LiYvbo/SparkKmeans,作者自述相关毕业设计,https://github.com/LiYvbo/SparkKmeans,README；src/org/liyubo/spark/kmeans 文件树,传感器数据处理、Spark聚类比较,未运行；未复现作者指标
+2026-10-22,zhangxinyun/zhangxinyun-spark,作者自述相关毕业设计,https://github.com/zhangxinyun/zhangxinyun-spark,README；tfidf.py；lda.py,HDFS、Spark文本特征与主题分析,未运行；未复现作者指标
+2026-10-22,virgoC0der/SentimentAnalysisOfProductReview,作者自述相关毕业设计,https://github.com/virgoC0der/SentimentAnalysisOfProductReview,README；svm/train_svm.py；lstm文件树,商品评论、SVM/LSTM对比,未运行；未复现作者指标
+2026-10-22,HuQi2018/BiSheServer,作者自述相关本科毕设,https://github.com/HuQi2018/BiSheServer,README；spark/spark.py,用户画像与离线电影推荐,未运行；未复现作者指标
+2026-10-22,wanqqq29/cuddly-meme,作者自述相关毕业设计,https://github.com/wanqqq29/cuddly-meme,README；main/review_spyder/views.py,旅游评论情感分析,未运行；未复现作者指标
+2026-10-22,ILZFLNO02/Sentiment-analysis-of-Bilibili-comments-based-on-model-fine-tuning,作者自述相关本科毕设,https://github.com/ILZFLNO02/Sentiment-analysis-of-Bilibili-comments-based-on-model-fine-tuning,README；批量BERT推理脚本,标注、微调、批量情感识别,未运行；未复现作者指标
+2026-10-22,Meghdad-DTU/PySpark-and-taxi-demand-prediction,一般开源示例，未认定为毕业设计,https://github.com/Meghdad-DTU/PySpark-and-taxi-demand-prediction,README；Pyspark and taxi demand prediction.ipynb,天气、滞后特征、线性回归,未运行；未复现作者指标
+2026-10-22,zeehan786/NYC-Taxi-Demand-Prediction-with-XGBoost-and-PySpark,一般数据科学项目，未认定为本专业毕设,https://github.com/zeehan786/NYC-Taxi-Demand-Prediction-with-XGBoost-and-PySpark,README；xgboost_pyspark_test_2024_jan_sept.ipynb,多月Parquet、区域小时聚合、XGBoost,未运行；未复现作者指标
