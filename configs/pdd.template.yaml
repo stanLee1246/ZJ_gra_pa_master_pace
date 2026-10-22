@@ -1,0 +1,5 @@
+data:
+  platform: pdd
+  enabled: false
+  kind: unavailable
+  note: 尚无经核验的行为日志和事件字典；不得套用淘宝数据。

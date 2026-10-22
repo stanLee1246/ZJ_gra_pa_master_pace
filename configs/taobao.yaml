@@ -1,0 +1,32 @@
+project:
+  seed: 20261022
+data:
+  platform: taobao
+  kind: public
+  version: UserBehavior-source-validation-required
+  input_glob: data/raw/taobao/UserBehavior.csv
+  encoding: utf-8
+  business_timezone: Asia/Shanghai
+  coverage_start: '2017-11-25T00:00:00+08:00'
+  coverage_end: '2017-12-04T00:00:00+08:00'
+output_root: artifacts
+task:
+  lookback_hours: 48
+  horizon_hours: 24
+  session_gap_minutes: 30
+  train_dates: ['2017-11-27', '2017-11-28', '2017-11-29']
+  validation_dates: ['2017-11-30']
+  test_dates: ['2017-12-01', '2017-12-02', '2017-12-03']
+mining:
+  min_support: 0.01
+  max_pattern_length: 4
+  feature_patterns: 12
+  clusters: 4
+model:
+  gbt_iterations: 50
+  gbt_depth: 5
+  lr_iterations: 60
+spark:
+  master: local[4]
+  driver_memory: 6g
+  shuffle_partitions: 64

@@ -1,0 +1,32 @@
+project:
+  seed: 20261022
+data:
+  platform: taobao
+  kind: synthetic
+  version: demo-v1
+  input_glob: data/demo/UserBehavior.csv
+  encoding: utf-8
+  business_timezone: Asia/Shanghai
+  coverage_start: '2017-11-25T00:00:00+08:00'
+  coverage_end: '2017-12-04T00:00:00+08:00'
+output_root: artifacts
+task:
+  lookback_hours: 48
+  horizon_hours: 24
+  session_gap_minutes: 30
+  train_dates: ['2017-11-27', '2017-11-28', '2017-11-29']
+  validation_dates: ['2017-11-30']
+  test_dates: ['2017-12-01', '2017-12-02', '2017-12-03']
+mining:
+  min_support: 0.05
+  max_pattern_length: 3
+  feature_patterns: 6
+  clusters: 3
+model:
+  gbt_iterations: 12
+  gbt_depth: 3
+  lr_iterations: 40
+spark:
+  master: local[2]
+  driver_memory: 4g
+  shuffle_partitions: 4

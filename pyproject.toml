@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecommerce-behavior-research"
+version = "0.1.0"
+description = "Reproducible ecommerce behavior mining and time-aware conversion prediction"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "pyspark==4.0.1",
+  "streamlit==1.50.0",
+  "duckdb==1.4.1",
+  "pandas==2.3.3",
+  "numpy==2.2.6",
+  "pyarrow==21.0.0",
+  "scikit-learn==1.7.2",
+  "PyYAML==6.0.3",
+  "plotly==6.3.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2"]
+
+[project.scripts]
+ecommerce-research = "ecommerce_research.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["spark: starts a local Spark JVM", "integration: end-to-end workflow"]
